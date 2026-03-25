@@ -19,9 +19,9 @@ export const setCanvas = (canvasElement, node) => {
 
 export const draw = (display, params = {}) => {
     const perro01 = new Image();
-    perro01.src = "./media/images/perro01.png";
+    perro01.src = "./audioVisualizer/media/images/perro01.png";
     const perro02 = new Image();
-    perro02.src = "./media/images/perro02.png";
+    perro02.src = "./audioVisualizer/media/images/perro02.png";
 
     const gradientRainbow = utils.getLinearGradient(ctx, 0, 0, 0, cHeight, [
         { percent: 0, color: `rgba(255,30,5,0.8)` },
@@ -58,7 +58,7 @@ export const draw = (display, params = {}) => {
         if (freqBool === true && params.showBars == false) {
             let maxRadius = cHeight;
             ctx.save();
-            for (let i = 0; i < audioData.length; i+=16) {
+            for (let i = 0; i < audioData.length; i += 16) {
                 let percent = audioData[i] / 255;
                 let circleRadius = percent * maxRadius;
                 // Outer circle (rainbow gradient)
@@ -83,7 +83,7 @@ export const draw = (display, params = {}) => {
         } else if (freqBool === false && params.showBars == false) {
             let maxRadius = cHeight / 4;
             ctx.save();
-            for (let i = 0; i < audioData.length; i+=16) {
+            for (let i = 0; i < audioData.length; i += 16) {
                 let percent = audioData[i] / 255;
                 let circleRadius = percent * maxRadius;
                 ctx.beginPath();
@@ -92,8 +92,8 @@ export const draw = (display, params = {}) => {
                 ctx.lineWidth = 2;
                 ctx.arc(
                     cWidth / 2,
-                    (cHeight / 2) ,
-                    circleRadius + (100* (audioData[i] / 128)),
+                    (cHeight / 2),
+                    circleRadius + (100 * (audioData[i] / 128)),
                     0,
                     (Math.PI * 2),
                     false);
@@ -111,7 +111,7 @@ export const draw = (display, params = {}) => {
             if (params.showCircles) {
                 let maxRadius = cHeight;
                 ctx.save();
-                for (let i = 0; i < audioData.length; i+=16) {
+                for (let i = 0; i < audioData.length; i += 16) {
                     let percent = audioData[i] / 255;
                     let circleRadius = percent * maxRadius;
                     // Outer circle (rainbow gradient)
@@ -149,7 +149,7 @@ export const draw = (display, params = {}) => {
             if (params.showCircles) {
                 let maxRadius = cHeight / 2;
                 ctx.save();
-                for (let i = 0; i < audioData.length; i+=16) {
+                for (let i = 0; i < audioData.length; i += 16) {
                     let percent = audioData[i] / 255;
                     let circleRadius = percent * maxRadius;
                     ctx.beginPath();
@@ -158,8 +158,8 @@ export const draw = (display, params = {}) => {
                     ctx.lineWidth = 2;
                     ctx.arc(
                         cWidth / 2,
-                        (cHeight / 2) ,
-                        circleRadius +(100* (audioData[i] / 128)),
+                        (cHeight / 2),
+                        circleRadius + (100 * (audioData[i] / 128)),
                         0,
                         (Math.PI * 2),
                         false);

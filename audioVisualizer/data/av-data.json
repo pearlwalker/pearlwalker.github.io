@@ -3,32 +3,32 @@
     "audioFiles": [
         {
             "id": "season2Episode3",
-            "filename": "media/audio/Season2Episode3.mp3",
+            "filename": "./audioVisualizer/media/audio/Season2Episode3.mp3",
             "songname": "Season 2 Episode 3"
         },
         {
             "id": "dayGaunts",
-            "filename": "media/audio/DayGaunts.mp3",
+            "filename": "./audioVisualizer/media/audio/DayGaunts.mp3",
             "songname": "Day Gaunts"
         },
         {
             "id": "newAdventureTheme",
-            "filename": "media/audio/NewAdventureTheme.mp3",
+            "filename": "./audioVisualizer/media/audio/NewAdventureTheme.mp3",
             "songname": "New Adventure Theme"
         },
         {
             "id": "peanutsTheme",
-            "filename": "media/audio/PeanutsTheme.mp3",
+            "filename": "./audioVisualizer/media/audio/PeanutsTheme.mp3",
             "songname": "Peanuts Theme"
         },
         {
             "id": "thePicardSong",
-            "filename": "media/audio/ThePicardSong.mp3",
+            "filename": "./audioVisualizer/media/audio/ThePicardSong.mp3",
             "songname": "The Picard Song"
         },
         {
             "id": "time",
-            "filename": "media/audio/Time.mp3",
+            "filename": "./audioVisualizer/media/audio/Time.mp3",
             "songname": "Time"
         }
     ],

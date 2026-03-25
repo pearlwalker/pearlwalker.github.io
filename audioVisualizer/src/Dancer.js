@@ -8,9 +8,9 @@ export class Dancer {
 
         this.htmlRef.width = this.size;
         if (state === "sleeping") {
-            this.htmlRef.src = "./media/animations/perro-sleeping.gif";
+            this.htmlRef.src = "./audioVisualizer/media/animations/perro-sleeping.gif";
         } else if (state === "awake") {
-            this.htmlRef.src = "./media/animations/perro-awake.gif";
+            this.htmlRef.src = "./audioVisualizer/media/animations/perro-awake.gif";
         }
     }
     update(soundPlaying) {

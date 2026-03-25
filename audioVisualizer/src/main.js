@@ -105,7 +105,7 @@ const loop = () => {
 
 export const init = async () => {
     // Await av-data JSON retrieval
-    const avData = await fetch("./data/av-data.json")
+    const avData = await fetch("./audioVisualizer/data/av-data.json")
         .then(response => response.json())
         .catch(error => console.log(`Error fetching JSON: ${error}`));
     // Setup page, create elements
