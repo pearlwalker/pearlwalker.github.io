@@ -1,0 +1,112 @@
+{
+    "title": "Perro Station: ULTIMATE AUDIO EXPERIENCE",
+    "audioFiles": [
+        {
+            "id": "season2Episode3",
+            "filename": "media/audio/Season2Episode3.mp3",
+            "songname": "Season 2 Episode 3"
+        },
+        {
+            "id": "dayGaunts",
+            "filename": "media/audio/DayGaunts.mp3",
+            "songname": "Day Gaunts"
+        },
+        {
+            "id": "newAdventureTheme",
+            "filename": "media/audio/NewAdventureTheme.mp3",
+            "songname": "New Adventure Theme"
+        },
+        {
+            "id": "peanutsTheme",
+            "filename": "media/audio/PeanutsTheme.mp3",
+            "songname": "Peanuts Theme"
+        },
+        {
+            "id": "thePicardSong",
+            "filename": "media/audio/ThePicardSong.mp3",
+            "songname": "The Picard Song"
+        },
+        {
+            "id": "time",
+            "filename": "media/audio/Time.mp3",
+            "songname": "Time"
+        }
+    ],
+    "htmlElements": [
+        {
+            "id": "btn-play",
+            "type": "button",
+            "dataPlaying": "no"
+        },
+        {
+            "id": "btn-fs",
+            "type": "button"
+        },
+        {
+            "id": "select-track",
+            "type": "select"
+        },
+        {
+            "id": "slider-volume",
+            "class": "label-above",
+            "type": "range",
+            "min": 0,
+            "max": 10,
+            "value": 5,
+            "step": 0.05
+        },
+        {
+            "id": "slider-highshelf",
+            "class": "label-above",
+            "type": "range",
+            "min": -50,
+            "max": 50,
+            "value": 0,
+            "step": 5
+        },
+        {
+            "id": "slider-lowshelf",
+            "class": "label-above",
+            "type": "range",
+            "min": -50,
+            "max": 50,
+            "value": 0,
+            "step": 5
+        },
+        {
+            "id": "cb-bars",
+            "class": "label-left",
+            "type": "checkbox",
+            "initChecked": true
+        },
+        {
+            "id": "cb-circles",
+            "class": "label-left",
+            "type": "checkbox",
+            "initChecked": true
+        },
+        {
+            "id": "cb-secrets",
+            "class": "label-left",
+            "type": "checkbox",
+            "initChecked": false,
+            "disabled": true
+        },
+        {
+            "id": "frequency",
+            "class": "label-left",
+            "type": "radio",
+            "value": "frequency",
+            "name": "vis-method",
+            "initChecked": true
+        },
+        {
+            "id": "waveform",
+            "class": "label-left",
+            "type": "radio",
+            "value": "waveform",
+            "name": "vis-method",
+            "initChecked": false
+        }
+    ]
+}

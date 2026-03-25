@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gaegu&display=swap" rel="stylesheet">
+  <!--Set to JSON title data-->
+  <title>Ultimate Audio Visualizer</title>
+
+  <link rel="icon" type="image/x-icon" href="media/images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="styles/default-styles.css">
+  <script src="src/loader.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <h1 id="page-title" class="title-text">
+      <!--Set to JSON title data-->ULRIM wood woof
+    </h1>
+  </header>
+  <main>
+
+    <canvas width="800" height="400"></canvas>
+
+    <!--Initialize to JSON initialSettings data-->
+    <div id="controls" class="main-text">
+      <section id="section-a">
+        <button id="btn-play" data-playing="no"></button>
+        <button id="btn-fs">Full Screen</button>
+        <select id="select-track">
+          <!--Fill with JSON audioFiles data-->
+        </select>
+      </section>
+      <div id="container-sections-bc">
+        <section id="section-b">
+        </section>
+        <section id="section-c">
+          <div id="section-c-row1">
+            <span id="span-cb-bars"></span>
+            <span id="span-cb-circles"></span>
+            <span id="span-cb-secrets"></span>
+          </div>
+          <div id="section-c-row2">
+            <span id="radio-display"></span>
+          </div>
+        </section>
+        <span id="sprite-span">
+          <img id="sprite-img">
+        </span>
+      </div>
+    </div> <!--End controls-->
+
+  </main>
+
+
+  <footer>
+
+    &copy;2025 Pearl Walker
+  </footer>
+</body>
+
+</html>

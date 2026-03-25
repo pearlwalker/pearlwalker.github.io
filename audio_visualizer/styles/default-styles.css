@@ -1,0 +1,104 @@
+.title-text {
+    font-family: "Fredericka the Great", serif;
+}
+
+.title-emphasis {
+    font-family: "Fredericka the Great", serif;
+    background: linear-gradient(to left, rgb(250, 40, 200), rgb(250, 250, 40), rgb(40, 200, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.main-text {
+    font-family: "Gaegu";
+}
+
+.fredericka-the-great-regular {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gaegu-regular {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: #eeeeee;
+    font-family: tahoma, verdana, sans serif;
+}
+
+canvas {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    background: #fafafa;
+}
+
+#controls {
+    margin-left: 1rem;
+}
+
+#label-volume {
+    margin-left: 1rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+#btn-play {
+    font-size: 1.2rem;
+    width: 6rem;
+}
+
+button {
+    font-family: inherit;
+}
+
+button[data-playing="yes"]:after {
+    content: "Pause";
+}
+
+button[data-playing="no"]:after {
+    content: "Play";
+}
+
+#btn-fs {
+    font-size: 1.2rem;
+    width: 8rem;
+}
+
+.label-above {
+    display: block;
+}
+
+.label-left {
+    display: inline;
+}
+
+.label-above:after,
+.label-left:after {
+    content: ":"
+}
+
+#container-sections-bc {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#section-b {
+    margin-right: 1rem;
+}
+
+#section-c-row1,
+#section-c-row2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
